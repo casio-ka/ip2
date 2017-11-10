@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+body {
+  font-family: 'Lato',serif;
+}
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,80%);
+  text-align: center;
+}
+
+header {
+  background-image: url('../assets/backgrounds/landing.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Nixie One',cursive;
+}
+/* The Overlay (background) */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #F15A29;
+    background-color: rgba(241,90,41, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #fff;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.logo img {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-80%)
+}
+.meal-showcase {
+  margin-top: -10px;
+  list-style: none;
+  width: 100%;
+}
+.meal-showcase li {
+  display: block;
+  width: 25%;
+  float: left;
+}
+.happyhour {
+  width: 100%;
+  margin: 0px;
+}
+.happyhour img {
+  width: 100%;
+  height: auto;
+}
+.meal-photo {
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.epic {
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: all 0.5s;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.epic:hover {
+  opacity: 0.3;
+  transform: scale(1.05);
+  color: #000000;
+
+}
+
+.one h3{
+  position: absolute;
+  top: 108%;
+  left: 38%;
+  transform: translate(-50%,50%);
+  color: #fff;
+  font-family: 'Lucida Fax',serif;
+  font-style: italic;
+}
+.two h3{
+  position: absolute;
+  top: 108%;
+  left: 62%;
+  transform: translate(-50%,50%);
+  color: #fff;
+  font-family: 'Lucida Fax',serif;
+  font-style: italic;
+}
+.three h3{
+  position: absolute;
+  top: 108%;
+  left: 88%;
+  transform: translate(-50%,80%);
+  color: #fff;
+  font-family: 'Lucida Fax',serif;
+  font-style: italic;
+}
+.clearfix {
+  zoom:1;
+}
+.clearfix:after {
+  visibility: hidden;
+  content: "."
+  height: 0;
+  display: block;
+  clear: both;
+}
+.fast-food {
+  margin-top: 80px;
+}
+
+#pic {
+  background-color: #fff;
+  text-align: center;
+  border: 0.5px solid #d5d5d5;
+  padding: 35px 0px;
+  box-shadow: -1px -1px 5px 2px rgba(192,192,192,1);
+}
+#pic img {
+  width: 86%;
+  margin-left: 0%;
+
+}
+.fastfood {
+  margin-top: 15%;
+  margin-left: 3%;
+  width: 86%;
+
+}
+.fastfood h1 {
+  font-family: 'Lucida Fax',serif;
+  color: #000;
+
+}
+.fastfood h3 {
+  margin-top: 4px;
+  color: #000;
+
+}
+.fastfood p {
+  color: #000;
+}
+.btn {
+  border: 1px solid #F15A29;
+  padding: 7px 30px;
+  color: #F15A29;
+  text-decoration: none;
+  border-radius: 0px;
+}
+.button-awesome {
+  margin-top: 15px;
+}
+.btn-half:hover {
+  background-color: #F15A29;
+  color: #fff;
+  transition: all 0.5s ease-in;
+}
+
+.softdrink {
+  margin-top: 7%;
+}
+.drinks {
+  margin-top: 15%;
+  margin-left: 3%;
+  width: 86%;
+  text-align: right;
+
+}
+.drinks h1 {
+  font-family: 'Lucida Fax',serif;
+  color: #000;
+
+}
+.drinks h3 {
+  margin-top: 4px;
+  color: #000;
+
+}
+.drinks p {
+  color: #000;
+}
+.btn {
+  border: 1px solid #F15A29;
+  padding: 7px 30px;
+  color: #F15A29;
+  text-decoration: none;
+  border-radius: 0px;
+}
+.button-cool {
+  margin-top: 15px;
+}
+.btn-full:hover {
+  background-color: #F15A29;
+  color: #fff;
+  transition: all 0.5s ease-in;
+}
+
+#drink {
+  background-color: #fff;
+  text-align: center;
+  border: 0.5px solid #d5d5d5;
+  padding: 35px 0px;
+  box-shadow: -1px -1px 5px 2px rgba(192,192,192,1);
+}
+#drink img {
+  width: 45%;
+  margin-right:-1%;
+
+}
+
+#menu {
+    margin-top: 8%;
+    background-image: url('../assets/backgrounds/foodsBg.jpg');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#menu1 {
+  width: 70%;
+  padding-top: 10%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.nav-tabs {
+  display:inline-table;
+}
+.nav-item {
+  width: 240px;
+
+}
+.nav-item a {
+  color: #F15A29;
+}
+.tabContent {
+  background-color: #fff;
+  display:inline-block;
+  margin-top: -5px;
+}
+#FastFood {
+  width: 960px;
+  padding: 20px 0px 20px 0px;
+}
+#FastFood img {
+  width: 100%;
+  margin-top: 10px;
+}
+#FastFood h3 {
+  color: #F15A29;
+  font-size: 15px;
+  font-family: 'Lucida Fax',serif;
+}
+#Customers {
+  height: 320px;
+  width: 80%;
+  background-color: #fff;
+  margin-top: 70px;
+  margin-left: 9%;
+  border: 0.5px solid #d5d5d5;
+  padding: 35px 35px;
+  box-shadow: -1px -0.3px 1px 3px rgba(192,192,192,1);
+}
+blockquote {
+  margin-right: 30px;
+}
+.customer {
+  margin-left: -150px;
+}
+.customer h3 {
+  color: #F15A29;
+  text-align: center;
+}
+.customer h5 {
+  color: #000;
+  text-align: center;
+}
+.customer p {
+  color: #000;
+  text-align: center;
+}
+#cite {
+text-align: center;
+}
+#cite img {
+  margin: 12px;
+}
+#cite .fa {
+  font-size: 20px;
+  color:  #F15A29;
+}
+.Aboutmenu {
+  width: 90%;
+}
+#email {
+  margin-top: 7%;
+  background-image: url('../assets/backgrounds/subscribe.jpg');
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+#email h2 {
+  color: #fff;
+  text-align: center;
+  padding-top: 12%;
+}
+.form-group {
+  text-align: center;
+}
+.plus {
+  margin:10px 10px;
+  width: 400px;
+  padding: 5.5px 0px;
+  opacity: 0.2;
+}
+.minus {
+width: 200px;
+background-color: #F15A29;
+color:#fff;
+margin-left: 20px;
+border: 0px;
+}
+#footer {
+  height: 350px;
+  background-color: #F15A29;
+  margin-top: -25px;
+}
+footer  {
+  padding-top: 30px;
+}
+.awesomelogo img {
+  position: absolute;
+  left: 550px;
+}
+#footer h1 {
+  margin-left: 55px;
+  font-family: 'Lucida Fax',serif;
+  margin-top: 3px;
+}
+#footer p {
+  margin-top: 160px;
+  color: #fff;
+}
+#footer h3 {
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+
+}
+.bottom {
+  padding-top: 12px;
+}
+.social {
+  z-index: 1;
+  position: absolute;
+  left: 507.5px;
+  margin-top: 12px;
+
+}
+.social li {
+  list-style: none;
+  text-align: center;
+  float: right;
+}
+.social a {
+  float: right;
+  padding-left: 55px;
+  color: #F15A29;
+  text-decoration: none;
+}
+#image img {
+  z-index: 0;
+  position: absolute;
+  left: 550px;
+}
+#image .onei {
+  padding-left: 0px;
+}
+
+#image .twoi {
+  padding-left: 65px;
+}
+#image .threei {
+  padding-left: 130px;
+}

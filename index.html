@@ -4,22 +4,242 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Amethysta|Arapey">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Amethysta|Arapey|Nixie+One|Lato">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/kitchen.css" type="text/css">
     <title>Anita's Kitchen</title>
   </head>
   <body>
-    <header>
 
+    <header>
+      <div class="row">
+
+        <div id="myNav" class="overlay"> <!--overlay-->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">Menu</a>
+            <br>
+            <a href="#">Events</a>
+            <br>
+            <a href="#">Contact</a>
+          </div>
+
+        </div>
+
+        <span style="position:absolute;top: 50px;left: 60px;font-size:40px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+        <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        </script> <!--end of overlay-->
+        <div class="logo">
+          <img src="assets/logoBig.png" alt="">
+        </div>
+      </div>
+      <div class="hero">
+        <h1>We Provide The Best Food.<br>At The <strong>Right Price</strong></h1>
+      </div>
     </header>
 
+    <section>
+      <ul class="meal-showcase clearfix">
+        <li>
+          <figure class="happyhour">
+            <img src="assets/foodtop/happyhour.jpg" alt="">
+            <img src="assets/foodtop/partytime.jpg" alt="">
+          </figure>
+        </li>
+        <li>
+          <figure class="meal-photo one">
+            <img src="assets/foodtop/breakfast.jpg" class="epic">
+            <h3 class="text">Breakfast</h3>
+          </figure>
+        </li>
+        <li>
+          <figure class="meal-photo two">
+            <img src="assets/foodtop/lunch.jpg" class="epic">
+            <h3 class="text">Lunch</h3>
+          </figure>
+        </li>
+        <li>
+          <figure class="meal-photo three">
+            <img src="assets/foodtop/dinner.jpg" class="epic">
+            <h3 class="text">Dinner</h3>
+          </figure>
+        </li>
+      </ul>
+    </section>
 
+    <section class="fast-food">
+      <div class="contanier-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="pic">
+              <img src="assets/fastFood1.jpg" alt="">
+              <img src="assets/fastFood2.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="fastfood">
+              <h1>Fast Food</h1>
+              <h3>You'll love our delicious fast food</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="button-awesome">
+              <a href="#" class="btn btn-half">VIEW GALLERY <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="softdrink">
+      <div class="contanier-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="drinks">
+              <h1>Drinks</h1>
+              <h3>We also produce delicious drinks</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="button-cool">
+              <a href="#" class="btn btn-full">VIEW GALLERY <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="drink">
+              <img src="assets/drink1.jpg" alt="">
+              <img src="assets/drink2.jpg" alt="">
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+    <div id="menu1">
+      <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" id="FastFood-tab" data-toggle="tab" href="#FastFood" role="tab" aria-selected="true">Fast Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Drinks-tab" data-toggle="tab" href="#Drinks" role="tab" aria-selected="false">Drinks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Chicken-tab" data-toggle="tab" href="#Chicken" role="tab" aria-selected="false">Chicken</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Rice-tab" data-toggle="tab" href="#Rice" role="tab" aria-selected="false">Rice</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-12">
+        <div class="tabContent" id="myTabContent">
+          <div class="tab-pane fade show active" id="FastFood" role="tabpanel" aria-labelledby="FastFood-tab">
+            <div class="col-md-4">
+              <img src="assets/fastfood/chickenBurger.jpg" alt=""><h3>Chicken Burger</h3>
+            </div>
+            <div class="col-md-4">
+            <img src="assets/fastfood/beefBurger.jpg" alt=""><h3>Beef Burger</h3>
+            </div>
+            <div class="col-md-4">
+            <img src="assets/fastfood/chickenPizza.jpg" alt=""><h3>Chicken Pizza</h3>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="Drinks" role="tabpanel" aria-labelledby="Drinks-tab">
+
+          </div>
+          <div class="tab-pane fade" id="Chicken" role="tabpanel" aria-labelledby="Chicken-tab">
+
+          </div>
+          <div class="tab-pane fade" id="Rice" role="tabpanel" aria-labelledby="Rice-tab">
+
+          </div>
+
+        </div>
+        </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="Customers">
+      <div class="container">
+        <div class="row">
+          <div class=" col-md-6">
+            <div class="customer">
+            <h3>Our Happy Customers</h3>
+            <h5>George Richard</h5>
+            <p>Great Food! Menu is awesome, there food is not only great but <br> also in the right price. I'll highly recommend them :)</p>
+            <div id="cite">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <cite><img src="assets/customers/p1.png" alt=""></cite>
+            <cite><img src="assets/customers/p2.png" alt=""></cite>
+            <cite><img src="assets/customers/p3.png" alt=""></cite>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Aboutmenu">
+              <blockquote class="customer">
+                <h3>Our Happy Customers</h3>
+                <p>Our menu is really small and specialized with <br> Lorem ipsum dolor sit amet consectetur adipisicing <br> sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua enim ad minim veniam <br> quis nostrud exercitation ullamco laboris nisi <br> quis nostrud exercitation ullamco laboris nisi.</p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="email">
+        <h2>Get your daily food items delivered to your email</h2>
+        <div class="form-group">
+          <input type="email" class="formcontrol plus" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
+          <button type="submit" class="btn btn-primary minus">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <footer>
+        <div class="awesomelogo"><img src="assets/footerlogos/logo_white.png" alt=""></div>
+        <h1 class="text-center">MENU</h1>
+        <h3 class="text-center">Thats What We Are</h3>
+        <div class="bottom">
+        <div class="social">
+          <ul>
+            <li><a href="http://facebook.com" class="fa fa-pinterest"></a></li>
+            <li><a href="http://pinterest.com" class="fa fa-facebook"></a></li>
+            <li><a href="http://twitter.com" class="fa fa-twitter"></a></li>
+          </ul>
+        </div>
+        <div id="image">
+          <img src="assets/footerlogos/facebook.png" class="onei" alt="">
+          <img src="assets/footerlogos/pinterest.png" class="twoi" alt="">
+          <img src="assets/footerlogos/twitter.png" class="threei" alt="">
+        </div>
+        </div>
+
+          <p class="text-center">2016 Menu Restaurant</p>
+      </footer>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
